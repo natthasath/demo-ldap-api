@@ -1,0 +1,7 @@
+fastapi
+pydantic
+uvicorn
+python-decouple
+python-multipart
+pyflakes
+ldap3

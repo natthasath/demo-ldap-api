@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "demo-ldap-api"
+version = "0.1.0"
+description = ""
+authors = ["Natthasath Saksupanara <natthasath.sak@gmail.com>"]
+license = "MIT License"
+readme = "README.md"
+packages = [{include = "demo_ldap_api"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+fastapi = "^0.88.0"
+pydantic = "^1.10.2"
+uvicorn = "^0.20.0"
+python-decouple = "^3.6"
+python-multipart = "^0.0.5"
+pyflakes = "^3.0.1"
+ldap3 = "^2.9.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
