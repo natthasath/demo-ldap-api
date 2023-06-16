@@ -81,7 +81,7 @@ class LdapService:
         conn = self.ad_connect(ldap_host, ldap_port, ldap_ssl, ldap_user, ldap_pass)
         dn = f'OU={ou_name},{ldap_dn}'
         object = '(objectclass=person)'
-        conn.search(dn, object, attributes = self.ldap_attr, paged_size=100)
+        conn.search(dn, object, attributes = self.ldap_attr)
         data = []
         for x in conn.response:
             data.append(x['attributes'])
